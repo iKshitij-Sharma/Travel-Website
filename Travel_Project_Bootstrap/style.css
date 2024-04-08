@@ -1,37 +1,31 @@
-/* Navbar */
+    /* Custom CSS for adjusting carousel image */
+    .carousel-item img {
+        object-fit: cover; /* Cover the entire area of the carousel item */
+        max-height: 600px; /* Set a maximum height for the carousel images */
+        width: 100%; /* Ensure the image width scales appropriately */
+      }
 
-.nav-item{
-    color: rgb(21, 20, 20) !important;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: var(--bs-navbar-nav-link-padding-y);
-    padding-left: var(--bs-navbar-nav-link-padding-x);
-}
-
-.nav-link {
-
-    font-weight: 400;
-    color: rgb(21, 20, 20);
-    /* margin: 5px; */
-    padding: 15px;
-
-}
-
-/* Custom CSS for adjusting carousel image */
-.carousel-item img {
-    object-fit:fill; /* Cover the entire area of the carousel item */
-    max-height: 400px; /* Set a maximum height for the carousel images */
-    width: 100%; /* Ensure the image width scales appropriately */
-  }
-
-  /* .trip{
-    cursor: pointer;
-  } */
-
-  h3.trip:hover {
+      h3.trip:hover {
     color: red; /* Change the text color to red when hovered over */
     /* You can change 'red' to any other color value you prefer */
   }
+
+  /* Custom CSS for navbar margins on large devices (lg breakpoint) */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-left: 15px; /* Adjust as needed */
+    margin-right: 15px; /* Adjust as needed */
+  }
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+  color: rgb(81, 29, 224);
+  font-weight:600;
+}
+
 
   
